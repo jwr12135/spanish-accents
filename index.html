@@ -1,49 +1,61 @@
-<style>
-  h1 {
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-    text-align: center;
-    border: #333 solid 1px;
-    color: #333;
-    border-radius: 5px;
-    margin: 15px;
-    display: inline-block;
-    transition: 0.25s;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-  h1:hover {
-    color: #fff;
-    background-color: #333;
-  }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  h1:active {
-    color: #0f0;
-  }
-</style>
+  <title>Spanish Accents</title>
 
-<title>Spanish Accents</title>
+  <style>
+    h1 {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      vertical-align: middle;
+      text-align: center;
+      border: #333 solid 1px;
+      color: #333;
+      border-radius: 5px;
+      margin: 15px;
+      display: inline-block;
+      transition: 0.25s;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-<h1 onclick="copy(this)">&aacute;</h1>
-<h1 onclick="copy(this)">&eacute;</h1>
-<h1 onclick="copy(this)">&iacute;</h1>
-<h1 onclick="copy(this)">&oacute;</h1>
-<h1 onclick="copy(this)">&uacute;</h1>
-<h1 onclick="copy(this)">&uuml;</h1>
-<h1 onclick="copy(this)">&ntilde;</h1>
-<h1 onclick="copy(this)">&iquest;</h1>
-<h1 onclick="copy(this)">&iexcl;</h1>
+    h1:hover {
+      color: #fff;
+      background-color: #333;
+    }
 
-<script>
-  const copy = function (e) {
-    const temp = document.createElement('textarea');
-    temp.value = e.textContent;
-    document.body.appendChild(temp);
-    temp.select();
-    temp.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(temp);
-  };
-</script>
+    h1:active {
+      color: #0f0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 onclick="copy(this)">&aacute;</h1>
+  <h1 onclick="copy(this)">&eacute;</h1>
+  <h1 onclick="copy(this)">&iacute;</h1>
+  <h1 onclick="copy(this)">&oacute;</h1>
+  <h1 onclick="copy(this)">&uacute;</h1>
+  <h1 onclick="copy(this)">&uuml;</h1>
+  <h1 onclick="copy(this)">&ntilde;</h1>
+  <h1 onclick="copy(this)">&iquest;</h1>
+  <h1 onclick="copy(this)">&iexcl;</h1>
+
+  <script>
+    const copy = function (e) {
+      const temp = document.createElement('textarea');
+      temp.value = e.textContent;
+      document.body.appendChild(temp);
+      temp.select();
+      temp.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      document.body.removeChild(temp);
+    };
+  </script>
+</body>
+
+</html>
